@@ -10,8 +10,8 @@ def lambda_handler(event, context):
  message = body.get('message', '')
 
  ses.send_email(
- Source='your-email@gmail.com',
- Destination={'ToAddresses': ['your-email@gmail.com']},
+ Source='bradleydms6@gmail.com',
+ Destination={'ToAddresses': ['bradleydms6@gmail.com']},
  Message={
  'Subject': {'Data': f'New Contact from {name}'},
  'Body': {'Text': {'Data': f'From: {name} ({email})\n\n{message}'}}
